@@ -15,6 +15,7 @@ import org.springframework.web.server.ResponseStatusException;
 
 import io.github.maranommv.cadastro.domain.entity.Contato;
 import io.github.maranommv.cadastro.domain.repository.ContatoRepository;
+import io.github.maranommv.cadastro.service.EnviaEmailService;
 import jakarta.validation.Valid;
 
 
@@ -23,10 +24,12 @@ import jakarta.validation.Valid;
 public class ContatoController {
     
     private final ContatoRepository contatoRepository;
+    private final EnviaEmailService enviaEmailService;
 
     @Autowired
-    public ContatoController(ContatoRepository contatoRepository){
+    public ContatoController(ContatoRepository contatoRepository, EnviaEmailService enviaEmailService){
         this.contatoRepository = contatoRepository;
+        this.enviaEmailService = enviaEmailService;
     }
 
     @GetMapping("{id}")
@@ -39,7 +42,11 @@ public class ContatoController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Contato salvar( @RequestBody @Valid Contato contato ){
+
+        enviaEmailService.enviar(contato.getEmail(), "Moda Ora", "Olá " + contato.getNome() + " Bem vindo ao Moda Ora. Nós já recebemos o seu contato, e em breve retornaremos o contato. Até breve!");
+
         return contatoRepository.save(contato);
+
     }
 
     @DeleteMapping("{id}")
