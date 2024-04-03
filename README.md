@@ -1,5 +1,17 @@
 # Projeto Moda-Ora
 
+## Por que o projeto foi desenvolvido?
+O Projeeto foi desenvolvido em um dos cursos da UDEMY de HTML, CSS e Javascript no qual a parte do front-end foi implementada juntamente com o professor. e a parte do Back-end foi feita pelo autor através do Java Spring.
+
+
+Foi utilizado as tecnlogias: 
+- SpringBoot
+- Java
+- HTML
+- CSS
+- JavaScript
+- TypeScript
+
 ## Criar uma database no Postgresql
 * Crie uma database no Postgresql com o nome 'modaora' lembrando que deve estar na porta padrão do pgAdmin
 
