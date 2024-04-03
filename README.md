@@ -1,7 +1,9 @@
 # Projeto Moda-Ora
 
 ## Por que o projeto foi desenvolvido?
-O Projeeto foi desenvolvido em um dos cursos da UDEMY de HTML, CSS e Javascript no qual a parte do front-end foi implementada juntamente com o professor. e a parte do Back-end foi feita pelo autor através do Java Spring.
+O Projeto foi desenvolvido em um dos cursos da UDEMY de HTML, CSS e Javascript no qual a parte do front-end foi implementada juntamente com o professor. e a parte do Back-end foi feita pelo autor através do Java Spring.
+
+Ele foi desenvolvido com o intuito de uma pessoa/Empresa estiver interessada ter um site demoda e queira ter uma API em seu comercio que envie o seu email. Esse projeto é totalmente ilustrativo para fins academicos.
 
 
 Foi utilizado as tecnlogias: 
